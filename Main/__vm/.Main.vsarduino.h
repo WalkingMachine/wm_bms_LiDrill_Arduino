@@ -20,12 +20,13 @@
 #define ARDUINO_ARCH_AVR
 //
 //
-void check_VCells();
+void check_VCells(boolean firstTime);
 void check_Current();
 void check_SecondBMS_State();
-void maj_Hart();
 void maj_Alarmes();
-void maj_Buzz();
+void maj_Hart(long cronoIn);
+void maj_Buzz(long cronoIn, int typeIn);
+void startupMusic();
 void essayerFermerRelais();
 void ouvrirRelais();
 byte check_ARCOM();
@@ -34,6 +35,5 @@ void delaisComplex(unsigned long microseconde);
 
 #include "pins_arduino.h" 
 #include "arduino.h"
-#include "BMS_LiDrill.ino"
-#include "Main_Functions.ino"
+#include "Main.ino"
 #include "UtilitairesV1.ino"

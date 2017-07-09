@@ -21,7 +21,7 @@ unsigned long deltaMicros(unsigned long emprunte1 , unsigned long emprunte2)
   
   if(emprunte2 < emprunte1)
   {
-    durerSortie = (maximLong - emprunte1) + emprunte2; //compensation du dÃ©passemen du nombre maimum
+    durerSortie = (maximLong - emprunte1) + emprunte2; //compensation du dépassemen du nombre maximum
   }
   else
   {
